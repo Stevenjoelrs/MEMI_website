@@ -246,5 +246,65 @@ a:hover {
         min-height: 70vh;
     }
 }
+.hover-lift {
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
 
+.hover-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.loading-skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.container-memi {
+    padding: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+    .container-memi {
+        padding: var(--spacing-lg) var(--spacing-xl);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media print {
+    .w3-bar,
+    #mobile-nav,
+    .carousel-control {
+        display: none !important;
+    }
+    
+    .w3-container {
+        padding: 0 !important;
+    }
+}
 }
