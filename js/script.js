@@ -88,3 +88,22 @@ function openICPCTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " w3-blue-grey";
 }
+window.onload = function() {
+    showSlide(slideIndex);
+
+    console.log("Centro MEMI - JavaScript cargado correctamente");
+};
+
+window.onscroll = function() {
+    var nav = document.getElementById("mobile-nav");
+    if (nav) {
+        nav.className = nav.className.replace(" w3-show", "");
+    }
+};
+
+window.onresize = function() {
+    var nav = document.getElementById("mobile-nav");
+    if (nav && window.innerWidth > 992) {
+        nav.className = nav.className.replace(" w3-show", "");
+    }
+};
