@@ -301,6 +301,153 @@
                 </div>
             </div>
         </selection>
+        <section id="publicaciones" class="w3-container w3-padding-64 w3-light-grey">
+            <div class="w3-content">
+                <h2 class="w3-center w3-text-blue-grey w3-margin-bottom">Publicaciones</h2>
+            
+                <div class="w3-center w3-margin-bottom">
+                    <p class="w3-large w3-text-grey">
+                        Material de apoyo y textos especializados clasificados por área
+                    </p>
+                </div>
+
+                <div class="w3-bar w3-white w3-card">
+                    <button class="w3-bar-item w3-button tablink-pub w3-blue-grey" onclick="openPublicationTab(event,'Matematicas')">Matemáticas</button>
+                    <button class="w3-bar-item w3-button tablink-pub" onclick="openPublicationTab(event,'Informatica')">Informática</button>
+                </div>
+
+                <div id="Matematicas" class="w3-container w3-white w3-card tab-content-pub">
+                    <div class="w3-padding-32">
+                        <h3 class="w3-text-blue-grey w3-margin-bottom">Publicaciones de Matemáticas</h3>
+                    
+                        <div class="w3-row-padding">
+                            <div class="w3-col s12 m6 w3-margin-bottom">
+                                <div class="w3-card w3-white w3-border w3-hover-shadow">
+                                    <div class="w3-container w3-padding">
+                                        <div class="w3-row">
+                                            <div class="w3-col s3 w3-center">
+                                                <i class="w3-jumbo w3-text-red">libro.png</i> 
+                                            </div>
+                                            <div class="w3-col s9">
+                                                <h4 class="w3-text-blue-grey">Cálculo Diferencial e Integral</h4>
+                                                <p><strong>Autor:</strong> Centro MEMI</p>
+                                                <p><strong>Año:</strong> 2023</p>
+                                                <p class="w3-small w3-text-grey">Texto de apoyo para estudiantes de primer año de ingeniería con ejercicios resueltos y propuestos.</p>
+                                                <button class="w3-button w3-small w3-blue-grey w3-round">Descargar PDF</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w3-col s12 m6 w3-margin-bottom">
+                                <div class="w3-card w3-white w3-border w3-hover-shadow">
+                                    <div class="w3-container w3-padding">
+                                        <div class="w3-row">
+                                            <div class="w3-col s3 w3-center">
+                                                <i class="w3-jumbo w3-text-red">libro.png</i>
+                                            </div>
+                                            <div class="w3-col s9">
+                                                <h4 class="w3-text-blue-grey">Álgebra Lineal Aplicada</h4>
+                                                <p><strong>Autor:</strong> Mgr. Luis R. Zegarra</p>
+                                                <p><strong>Año:</strong> 2024</p>
+                                                <p class="w3-small w3-text-grey">Manual práctico con aplicaciones en ingeniería y métodos computacionales.</p>
+                                                <button class="w3-button w3-small w3-blue-grey w3-round">Descargar PDF</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w3-col s12 m6 w3-margin-bottom">
+                                <div class="w3-card w3-white w3-border w3-hover-shadow">
+                                    <div class="w3-container w3-padding">
+                                        <div class="w3-row">
+                                            <div class="w3-col s3 w3-center">
+                                                <i class="w3-jumbo w3-text-red">libro.png</i>
+                                            </div>
+                                            <div class="w3-col s9">
+                                                <h4 class="w3-text-blue-grey">Métodos Numéricos</h4>
+                                                <p><strong>Autor:</strong> Centro MEMI</p>
+                                                <p><strong>Año:</strong> 2023</p>
+                                                <p class="w3-small w3-text-grey">Algoritmos y técnicas numéricas con implementaciones en Python y MATLAB.</p>
+                                                <button class="w3-button w3-small w3-blue-grey w3-round">Descargar PDF</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Informatica" class="w3-container w3-white w3-card tab-content-pub" style="display:none">
+                    <div class="w3-padding-32">
+                        <h3 class="w3-text-blue-grey w3-margin-bottom">Publicaciones de Informática</h3>
+                    
+                        <div class="w3-row-padding">
+                            <div class="w3-col s12 m6 w3-margin-bottom">
+                                <div class="w3-card w3-white w3-border w3-hover-shadow">
+                                    <div class="w3-container w3-padding">
+                                        <div class="w3-row">
+                                            <div class="w3-col s3 w3-center">
+                                                <i class="w3-jumbo w3-text-blue">guia.png</i>
+                                            </div>
+                                            <div class="w3-col s9">
+                                                <h4 class="w3-text-blue-grey">Programación en Python</h4>
+                                                <p><strong>Autor:</strong> Mgr. Jorge Orellana</p>
+                                                <p><strong>Año:</strong> 2024</p>
+                                                <p class="w3-small w3-text-grey">Guía completa desde fundamentos hasta programación orientada a objetos y librerías especializadas.</p>
+                                                <button class="w3-button w3-small w3-blue-grey w3-round">📥 Descargar PDF</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w3-col s12 m6 w3-margin-bottom">
+                                <div class="w3-card w3-white w3-border w3-hover-shadow">
+                                    <div class="w3-container w3-padding">
+                                        <div class="w3-row">
+                                            <div class="w3-col s3 w3-center">
+                                                <i class="w3-jumbo w3-text-blue">libro.png</i>
+                                            </div>
+                                            <div class="w3-col s9">
+                                                <h4 class="w3-text-blue-grey">Bases de Datos Relacionales</h4>
+                                                <p><strong>Autor:</strong> Centro MEMI</p>
+                                                <p><strong>Año:</strong> 2023</p>
+                                                <p class="w3-small w3-text-grey">Diseño, implementación y administración de bases de datos con MySQL y PostgreSQL.</p>
+                                                <button class="w3-button w3-small w3-blue-grey w3-round">Descargar PDF</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w3-col s12 m6 w3-margin-bottom">
+                                <div class="w3-card w3-white w3-border w3-hover-shadow">
+                                    <div class="w3-container w3-padding">
+                                        <div class="w3-row">
+                                            <div class="w3-col s3 w3-center">
+                                                <i class="w3-jumbo w3-text-blue">libro.png</i>
+                                            </div>
+                                            <div class="w3-col s9">
+                                                <h4 class="w3-text-blue-grey">Desarrollo Web Moderno</h4>
+                                                <p><strong>Autor:</strong> Centro MEMI</p>
+                                                <p><strong>Año:</strong> 2024</p>
+                                                <p class="w3-small w3-text-grey">HTML5, CSS3, JavaScript y frameworks modernos para desarrollo web responsivo.</p>
+                                                <button class="w3-button w3-small w3-blue-grey w3-round">Descargar PDF</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer>
     
