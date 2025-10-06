@@ -53,22 +53,22 @@
         </div>
     </header>
     <main>
-        <section id="inicio" class="hero-section w3-container w3-padding-32 w3-center w3-text-white">
+        <section id="inicio" class="hero-section w3-container w3-padding-32 w3-center w3-text-white" role="banner">
             <div class="w3-content">
-                <div class="hero-logo-container">
-                    <img src="images/logos/logo_memi.png" 
-                    alt="Logo Centro MEMI" 
-                    class="hero-memi-logo">
-                </div>
-        
-                <p class="hero-subtitle w3-text-white">Mejoramiento de la Enseñanza de la Matemática e Informática</p>
-                <p class="hero-institution w3-text-white">Facultad de Ciencias y Tecnología - UMSS</p>
-        
-                <div class="hero-cta">
-                    <button class="w3-button w3-round w3-large btn-hero">
-                        Conoce más sobre nosotros
-                    </button>
-                </div>
+                <header class="hero-header">
+                    <div class="hero-logo-container">
+                        <img src="images/logos/logo_memi.png" alt="Logo Centro MEMI" class="hero-memi-logo">
+                    </div>
+            
+                    <p class="hero-subtitle w3-text-white">Mejoramiento de la Enseñanza de la Matemática e Informática</p>
+                    <p class="hero-institution w3-text-white">Facultad de Ciencias y Tecnología - UMSS</p>
+            
+                    <div class="hero-cta">
+                        <button class="w3-button w3-round w3-large btn-hero">
+                            Conoce más sobre nosotros
+                        </button>
+                    </div>
+                </header>
             </div>
         </section>
         
@@ -162,13 +162,14 @@
             </div>
         </section>
         
-        <selection id="sobre" class="w3-container w3 padding-64 w3-light-grey">
+        <section id="sobre" class="w3-container w3-padding-64 w3-light-grey">
             <div class="w3-content">
                 <h2 class="w3-center w3-text-blue-grey w3-margin-bottom">Qué es el centro MEMI?</h2>
                 
                 <div class="w3-bar w3-white w3-card">
                     <button class="w3-bar-item w3-button tablink w3-blue-grey" onclick="openTab(event, 'Antecedentes')">Antecedentes</button>
                     <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Autoridades')">Autoridades</button>
+                    <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'Organigrama')">Organigrama</button>
                 </div>
                 
                 <div id="Antecedentes" class="w3-container w3-white w3-card tab-content">
@@ -234,10 +235,31 @@
                         </div>
                     </div>
                 </div>
+                <div id="Organigrama" class="w3-container w3-white w3-card tab-content" style="display:none">
+                    <div class="w3-padding-32">
+                        <h3 class="w3-text-blue-grey w3-margin-bottom">Estructura Organizacional</h3>
+        
+                        <div class="w3-center">
+                            <div class="w3-card w3-white w3-padding w3-margin-bottom">
+                                <div class="w3-display-container w3-light-grey" style="height:400px;">
+                                    <div class="w3-display-middle w3-center">
+                                        <i class="w3-jumbo w3-text-grey">📊</i>
+                                        <p>Organigrama Centro MEMI</p>
+                                        <p class="w3-small">Estructura jerárquica del centro</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <p class="w3-text-grey">
+                                El Centro MEMI cuenta con una estructura organizativa que coordina las áreas de Matemáticas e Informática bajo la dirección general.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </selection>
+        </section>
 
-        <selection id="cursos" class="w3-container w3-padding-64">
+        <section id="cursos" class="w3-container w3-padding-64">
             <div class="w3-content">
                 <h2 class="w3-center w3-text-blue-grey w3-margin-bottom">Cursos y Seminarios</h2>
                 
@@ -313,7 +335,7 @@
                     <button class="w3-button w3-blue-grey w3-round w3-large">Ver todos los cursos disponibles</button>
                 </div>
             </div>
-        </selection>
+        </section>
         <section id="publicaciones" class="w3-container w3-padding-64 w3-light-grey">
             <div class="w3-content">
                 <h2 class="w3-center w3-text-blue-grey w3-margin-bottom">Publicaciones</h2>
@@ -339,7 +361,7 @@
                                     <div class="w3-container w3-padding">
                                         <div class="w3-row">
                                             <div class="w3-col s3 w3-center">
-                                                <i class="w3-jumbo w3-text-red">libro.png</i> 
+                                                <i class="w3-jumbo w3-text-red">📕</i> 
                                             </div>
                                             <div class="w3-col s9">
                                                 <h4 class="w3-text-blue-grey">Cálculo Diferencial e Integral</h4>
@@ -358,7 +380,7 @@
                                     <div class="w3-container w3-padding">
                                         <div class="w3-row">
                                             <div class="w3-col s3 w3-center">
-                                                <i class="w3-jumbo w3-text-red">libro.png</i>
+                                                <i class="w3-jumbo w3-text-red">📕</i>
                                             </div>
                                             <div class="w3-col s9">
                                                 <h4 class="w3-text-blue-grey">Álgebra Lineal Aplicada</h4>
@@ -377,7 +399,7 @@
                                     <div class="w3-container w3-padding">
                                         <div class="w3-row">
                                             <div class="w3-col s3 w3-center">
-                                                <i class="w3-jumbo w3-text-red">libro.png</i>
+                                                <i class="w3-jumbo w3-text-red">📕</i>
                                             </div>
                                             <div class="w3-col s9">
                                                 <h4 class="w3-text-blue-grey">Métodos Numéricos</h4>
@@ -404,7 +426,7 @@
                                     <div class="w3-container w3-padding">
                                         <div class="w3-row">
                                             <div class="w3-col s3 w3-center">
-                                                <i class="w3-jumbo w3-text-blue">guia.png</i>
+                                                <i class="w3-jumbo w3-text-blue">🗒️</i>
                                             </div>
                                             <div class="w3-col s9">
                                                 <h4 class="w3-text-blue-grey">Programación en Python</h4>
@@ -423,7 +445,7 @@
                                     <div class="w3-container w3-padding">
                                         <div class="w3-row">
                                             <div class="w3-col s3 w3-center">
-                                                <i class="w3-jumbo w3-text-blue">libro.png</i>
+                                                <i class="w3-jumbo w3-text-blue">📘</i>
                                             </div>
                                             <div class="w3-col s9">
                                                 <h4 class="w3-text-blue-grey">Bases de Datos Relacionales</h4>
@@ -442,7 +464,7 @@
                                     <div class="w3-container w3-padding">
                                         <div class="w3-row">
                                             <div class="w3-col s3 w3-center">
-                                                <i class="w3-jumbo w3-text-blue">libro.png</i>
+                                                <i class="w3-jumbo w3-text-blue">📘</i>
                                             </div>
                                             <div class="w3-col s9">
                                                 <h4 class="w3-text-blue-grey">Desarrollo Web Moderno</h4>
@@ -767,7 +789,6 @@
                         
                             <p><i class="w3-text-blue-grey">📞</i> <strong>Teléfono:</strong></p>
                             <p>591 4 4666037</p>
-                            <p>IP: 36540</p>
                         
                             <p><i class="w3-text-blue-grey">📧</i> <strong>Correo Electrónico:</strong></p>
                             <p>memi@fcyt.umss.edu.bo</p>
@@ -784,7 +805,7 @@
                         <div class="w3-card w3-margin-bottom">
                             <div class="w3-display-container w3-light-grey" style="height:250px;">
                                 <div class="w3-display-middle w3-center">
-                                    <i class="w3-jumbo w3-text-grey">🗺️</i>
+                                    <img src="images/mapa.png" alt="Mapa MEMI" style="max-width:100%; height:auto;">
                                     <p>Mapa del Campus UMSS</p>
                                     <p class="w3-small">Edificio MEMI</p>
                                 </div>
@@ -817,11 +838,34 @@
     <footer class="w3-container w3-padding-32 w3-blue-grey w3-text-white">
         <div class="w3-content">
             <div class="w3-row-padding">
-               <div class="w3-col s12 m4 l4">
+                <div class="w3-col s12 m4 l4">
+                    <div class="w3-left-align w3-margin-bottom">
+                        <img src="images/logos/logo_memi_wb.png" 
+                             alt="Logo Centro MEMI" 
+                             style="height:60px; border-radius:8px; margin-bottom:15px;">
+                    </div>
                     <h3>Centro MEMI</h3>
                     <p>Mejoramiento de la Enseñanza de la Matemática e Informática</p>
                     <p>Facultad de Ciencias y Tecnología</p>
                     <p>Universidad Mayor de San Simón</p>
+                </div>
+            
+                <div class="w3-col s12 m4 l4">
+                    <h3>Enlaces Institucionales</h3>
+                    <div class="w3-margin-top">
+                        <a href="mailto:memi@fcyt.umss.edu.bo" 
+                           class="w3-button w3-round w3-white w3-text-blue-grey w3-margin-right w3-margin-bottom">
+                            memi@fcyt.umss.edu.bo
+                        </a>
+                        <a href="#" 
+                           class="w3-button w3-round w3-white w3-text-blue-grey w3-margin-right w3-margin-bottom">
+                            Facebook MEMI
+                        </a>
+                        <a href="https://fcyt.umss.edu.bo" 
+                           class="w3-button w3-round w3-white w3-text-blue-grey w3-margin-bottom">
+                            Web FCyT
+                        </a>
+                    </div>
                 </div>
             
                 <div class="w3-col s12 m4 l4">
@@ -830,19 +874,6 @@
                     <p><a href="#cursos" class="w3-text-white w3-hover-text-light-grey">Cursos/Seminarios</a></p>
                     <p><a href="#servicios" class="w3-text-white w3-hover-text-light-grey">Servicios</a></p>
                     <p><a href="#icpc" class="w3-text-white w3-hover-text-light-grey">ICPC UMSS</a></p>
-                </div>
-            
-                <div class="w3-col s12 m4 l4">
-                    <h3>Enlaces Institucionales</h3>
-                    <div class="w3-margin-top">
-                        <button class="w3-button w3-round w3-white w3-text-blue-grey w3-margin-right w3-margin-bottom">Facebook</button>
-                        <button class="w3-button w3-round w3-white w3-text-blue-grey w3-margin-bottom">Web FCyT</button>
-                    </div>
-                    <p class="w3-margin-top">
-                        <a href="mailto:memi@fcyt.umss.edu.bo" class="w3-text-white w3-hover-text-light-grey">
-                            📧 memi@fcyt.umss.edu.bo
-                        </a>
-                    </p>
                 </div>
             </div>
         
