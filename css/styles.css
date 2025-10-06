@@ -181,5 +181,70 @@ a:hover {
     border-radius: 2px;
 }
 
+@media (min-width: 768px) {
+    
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2.5rem; }
+    
+    .w3-bar .w3-button {
+        padding: var(--spacing-sm) var(--spacing-md) !important;
+        margin: 0 var(--spacing-xs) !important;
+        border-radius: 0.5rem !important;
+    }
+    
+    .carousel-container {
+        max-height: 350px;
+    }
+    
+    .card-memi {
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .contact-form {
+        padding: var(--spacing-xl);
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    h1 { font-size: 3.5rem; }
+    h2 { font-size: 3rem; }
+    
+    .w3-hide-small .w3-button {
+        font-size: 0.95rem;
+        font-weight: 500;
+    }
+    
+    .hero-section {
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .carousel-container {
+        max-height: 400px;
+    }
+    
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        gap: var(--spacing-lg);
+    }
+}
+
+@media (min-width: 1440px) {
+    
+    .w3-content {
+        max-width: 1200px !important;
+    }
+    
+    .w3-padding-64 {
+        padding: 5rem 0 !important;
+    }
+    
+    .hero-section {
+        min-height: 70vh;
+    }
+}
 
 }
