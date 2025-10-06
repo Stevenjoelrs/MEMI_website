@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  memi-web:
+    build: .
+    container_name: memi-umss-web
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    volumes:
+      - nginx-logs:/var/log/nginx
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80
+
+volumes:
+  nginx-logs:
