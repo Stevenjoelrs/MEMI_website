@@ -73,3 +73,18 @@ function openPublicationTab(evt, tabName) {
     evt.currentTarget.className += " w3-blue-grey";
 }
 
+function openICPCTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tab-content-icpc");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    
+    tablinks = document.getElementsByClassName("tablink-icpc");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-blue-grey", "");
+    }
+    
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " w3-blue-grey";
+}
